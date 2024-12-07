@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Validate from "./validate";
+import Validate from "../utils/validate";
 import { useNavigate } from "react-router";
 
 

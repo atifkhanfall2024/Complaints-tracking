@@ -4,7 +4,10 @@ import Browse from "./browse"
 import OPT from "./Opt"
 import OTPVerification from "./OTPwait"
 import SuccessScreen from "./Success"
-
+import Cards from "./Cards"
+import Complaint from "./Complaints"
+import Notification from "./Notification"
+import Account from "./Account"
 
 const Body = ()=>{
 
@@ -17,7 +20,25 @@ const Body = ()=>{
    } , 
    {
       path:"/browse",
-      element:<Browse/>
+      element:<Browse/>,
+      children:[
+        {
+            path:"card" ,
+            element:<Cards/>
+        } ,
+        {
+            path:"complaints" ,
+            element:<Complaint/>
+        } ,
+        {
+            path:"notify" ,
+            element:<Notification/>
+        } ,
+        {
+            path:"account",
+            element:<Account/>
+        }
+      ] ,
    } ,
    {
     path:"/opt",
@@ -30,7 +51,8 @@ const Body = ()=>{
    {
     path:"/success",
     element:<SuccessScreen/>
-   }
+   } ,
+ 
 ])
 
     return(

@@ -1,7 +1,17 @@
+
+import { Outlet } from 'react-router-dom';
+import Sidebar from "./Sidebar";
+import Headers from "./DashboardHeader";
+
+
 const Browse = ()=>{
     return(
         <div>
-            Welcome to browse 
+           
+            <Sidebar/>
+            <Headers/>
+           
+            <Outlet />
         </div>
     )
 }
