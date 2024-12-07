@@ -26,7 +26,7 @@ const LoginForm = () => {
     setiserror(Message)
 
     if (!Message) {
-        nav("/browse");
+        nav("/browse/card");
       }
      
       if(!isSignIn){
