@@ -1,12 +1,16 @@
 
 import './App.css';
 import Body from './components/body';
+import Header from './components/Header';
 
 const App = ()=>{
   return(
-    <div>
-     <Body/>
-    </div>
+    <>
+    
+   <Header/>
+    <Body/>
+   
+    </>
   )
 }
 
