@@ -3,7 +3,7 @@ import { Link  } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div style={{transform:"translate(0% , 0%)"}} className="w-64 bg-gray-500 text-white h-full flex flex-col absolute">
+    <div style={{transform:"translate(0% , 0%)"}} className="w-64 bg-gray-500 text-white h-[150%] flex flex-col absolute">
       <div className="p-8">
         <h1 className="p-3 my-4 text-blue-300 mb-8">Manage</h1>
         <ul className="space-y-8">
