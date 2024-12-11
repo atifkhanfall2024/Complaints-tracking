@@ -9,6 +9,7 @@ import Complaint from "./Complaints"
 import Notification from "./Notification"
 import Account from "./Account"
 
+
 const Body = ()=>{
 
    const Approuter = createBrowserRouter([
@@ -37,7 +38,8 @@ const Body = ()=>{
         {
             path:"account",
             element:<Account/>
-        }
+        } ,
+       
       ] ,
    } ,
    {
